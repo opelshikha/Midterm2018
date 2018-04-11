@@ -15,6 +15,7 @@
       <change beforePath="$PROJECT_DIR$/src/design/EmployeeInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/design/EmployeeInfo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/math/FindMissingNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/math/FindMissingNumber.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/math/LowestNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/math/LowestNumber.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/math/MakePyramid.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/math/MakePyramid.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/math/Pattern.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/math/Pattern.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/math/PrimeNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/math/PrimeNumber.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/problems/Palindrome.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/problems/Palindrome.java" afterDir="false" />
@@ -53,11 +54,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="MakePyramid.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="MakePyramid.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/math/MakePyramid.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="9" column="27" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
+            <state relative-caret-position="68">
+              <caret line="5" column="9" lean-forward="true" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -98,7 +99,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="EmployeeInfo.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="EmployeeInfo.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/design/EmployeeInfo.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="68">
@@ -174,7 +175,6 @@
         <option value="$PROJECT_DIR$/src/definition/data-structure-questions" />
         <option value="$PROJECT_DIR$/src/math/Factorial.java" />
         <option value="$PROJECT_DIR$/src/math/Fibonacci.java" />
-        <option value="$PROJECT_DIR$/src/math/MakePyramid.java" />
         <option value="$PROJECT_DIR$/src/problems/Anagram.java" />
         <option value="$PROJECT_DIR$/src/problems/DuplicateWord.java" />
         <option value="$PROJECT_DIR$/src/problems/Palindrome.java" />
@@ -187,6 +187,7 @@
         <option value="$PROJECT_DIR$/src/datastructure/UseArrayList.java" />
         <option value="$PROJECT_DIR$/src/datastructure/DataReader.java" />
         <option value="$PROJECT_DIR$/src/design/EmployeeInfo.java" />
+        <option value="$PROJECT_DIR$/src/math/MakePyramid.java" />
       </list>
     </option>
   </component>
@@ -197,10 +198,11 @@
       </MavenGeneralSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds">
     <option name="x" value="907" />
+    <option name="y" value="36" />
     <option name="width" value="1019" />
-    <option name="height" value="1038" />
+    <option name="height" value="929" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -260,11 +262,22 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.MakePyramid">
+  <component name="RunManager" selected="Application.Factorial">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HEIGHT" value="0" />
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <option name="WIDTH" value="0" />
+    </configuration>
+    <configuration name="Factorial" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="math.Factorial" />
+      <module name="CodingExamMarch2018" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="math.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
     </configuration>
     <configuration name="FindMissingNumber" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="math.FindMissingNumber" />
@@ -381,9 +394,11 @@
       <item itemvalue="Application.LowestNumber" />
       <item itemvalue="Application.Pattern" />
       <item itemvalue="Application.PrimeNumber" />
+      <item itemvalue="Application.Factorial" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Factorial" />
         <item itemvalue="Application.PrimeNumber" />
         <item itemvalue="Application.Pattern" />
         <item itemvalue="Application.LowestNumber" />
@@ -405,25 +420,24 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
+    <frame x="726" y="29" width="815" height="743" extended-state="0" />
     <layout>
       <window_info anchor="bottom" id="PrintInConsole" order="7" />
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info active="true" anchor="bottom" id="Messages" order="7" visible="true" weight="0.3255814" />
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.3255814" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="3" />
-      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32968536" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="right" id="Mongo Explorer" order="3" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.3789308" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.73285717" visible="true" weight="0.19661458" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.73285717" visible="true" weight="0.3770287" />
       <window_info id="Structure" order="1" sideWeight="0.26714286" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
@@ -848,17 +862,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/math/MakePyramid.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="9" column="27" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/design/EmployeeInfo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="26" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/math/MakePyramid.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="5" column="9" lean-forward="true" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="9" />
         </state>
       </provider>
     </entry>
