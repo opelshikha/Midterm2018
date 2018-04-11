@@ -12,9 +12,9 @@ public class MakePyramid {
         //                * * * * *
         //               * * * * * *
 
-        for (int x= 0;x<6;x++) {
+        for (int x= 0;x<9;x++) {
 
-            for (int y = 5; y>= x; y--) {
+            for (int y = 8; y>= x; y--) {
                 System.out.print(" ");
             }
             for (int z = 0; z <=x; z++) {

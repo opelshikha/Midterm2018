@@ -2,7 +2,7 @@ package design;
 
 import java.util.Scanner;
 
-public class EmployeeInfo {
+public class EmployeeInfo  {
 	
  /*This class can be implemented from Employee interface then add additional methods in EmployeeInfo class.
  * Also, Employee interface can be implemented into an abstract class.So create an Abstract class
@@ -20,9 +20,14 @@ public class EmployeeInfo {
 	/*
 	 * declare few static and final fields and some non-static fields
 	 */
+	private String name;
+	private int employeeID, employeeAge;
+	private double salary;
+	private int performance;
 	static String companyName;
-	
-	/*
+	static String address;
+
+	 /*
 	 * You must implement the logic for below 2 methods and 
 	 * following 2 methods are prototype as well for other methods need to be design,
 	 * as you will come up with the new ideas.
@@ -33,9 +38,11 @@ public class EmployeeInfo {
 	 * Must implement below constructor.
 	 */
 	public EmployeeInfo(int employeeId){
-		
+		this.employeeID = employeeId;
 	}
     public EmployeeInfo(String name, int employeeId){
+		this.name = name;
+		this.employeeID = employeeId;
 		
 	}
 	
