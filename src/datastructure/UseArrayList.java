@@ -11,7 +11,30 @@ public class UseArrayList {
 		 * Store all the sorted data into one of the databases.
 		 * 
 		 */
-	
+
+		ConnectDB connectDB = new ConnectDB();
+		//connectDB.InsertDataFromArrayListToMySql(car, "Cars Type", "Cars");
+		ArrayList<Object> car = new ArrayList();
+		car.add("Engine");
+		car.add("Car Name");
+		car.add("Car Color");
+		car.add("Car Type");
+		car.add("Speed");
+
+		int cars = car.size();
+
+		car.contains("Seats");
+
+		boolean hasGas = car.remove("Car Name");
+
+		for(Object x : car){
+			System.out.println(x);
+		}
+
+		Iterator<Object> y = car.iterator();
+		while(y.hasNext()){
+			System.out.println(y.hasNext());
+		}
 
 	}
 

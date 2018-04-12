@@ -1,5 +1,9 @@
 package datastructure;
 
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Map;
+
 public class UseMap {
 
 	public static void main(String[] args) {
@@ -11,6 +15,20 @@ public class UseMap {
 		 * Use any databases[MongoDB, Oracle, MySql] to store data and retrieve data.
 		 */
 
+		Map<Integer, String> map= new HashMap<Integer,String>();
+		map.put(10, "MD");
+		map.put(12, "Herry");
+		map.put(13, "Ziggy");
+		map.put(16, "Siam");
+
+		for(Map.Entry key :map.entrySet()){
+			System.out.println(key.getKey()+ " "+ key.getValue());
+		}
+		System.out.println();
+		Iterator<Map.Entry<Integer, String>> m=map.entrySet().iterator();
+		while (m.hasNext()){
+			System.out.println(m.next());
+		}
 	}
 
 }
