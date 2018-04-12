@@ -38,7 +38,7 @@ public class Numbers {
 
 		//By following above, Continue for rest of the Sorting Algorithm....
 		//Insertion Sort
-		algo.selectionSort(num);
+		algo.insertionSort(num);
 		long insertionSortExecutionTime = algo.executionTime;
 		System.out.println("Total Execution Time of "+ num.length + " numbers in Selection Sort take: " + selectionSortExecutionTime + " milli sec");
 		connectDB.insertDataFromArrayToMySql(num, "selection_sort", "SortingNumbers");
@@ -47,7 +47,7 @@ public class Numbers {
 		int in = num.length;
 		randomize (num, n);
 
-		algo.selectionSort(num);
+		algo.bubbleSort(num);
 		long bubbleSortExecutionTime = algo.executionTime;
 		System.out.println("Total Execution Time of "+ num.length + " numbers in Selection Sort take: " + selectionSortExecutionTime + " milli sec");
 		connectDB.insertDataFromArrayToMySql(num, "selection_sort", "SortingNumbers");
@@ -55,6 +55,8 @@ public class Numbers {
 		printValue(numbers);
 		int bn = num.length;
 		randomize (num, n);
+
+
 
 
 
