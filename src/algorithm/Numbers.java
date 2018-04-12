@@ -47,6 +47,14 @@ public class Numbers {
 		int in = num.length;
 		randomize (num, n);
 
+		algo.selectionSort(num);
+		long bubbleSortExecutionTime = algo.executionTime;
+		System.out.println("Total Execution Time of "+ num.length + " numbers in Selection Sort take: " + selectionSortExecutionTime + " milli sec");
+		connectDB.insertDataFromArrayToMySql(num, "selection_sort", "SortingNumbers");
+		List<String> bnumbers = connectDB.readDataBase("selection_sort", "SortingNumbers");
+		printValue(numbers);
+		int bn = num.length;
+		randomize (num, n);
 
 
 
