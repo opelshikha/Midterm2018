@@ -35,12 +35,17 @@ public class Numbers {
         printValue(numbers);
 		int n = num.length;
 		randomize (num, n);
-		//Insertion Sort
-		algo.insertionSort(num);
-		long insertionSortExecutionTime = algo.executionTime;
-		System.out.println("Total Execution Time of " + num.length + " numbers in Insertion Sort take: " + insertionSortExecutionTime + " milli sec");
 
 		//By following above, Continue for rest of the Sorting Algorithm....
+		//Insertion Sort
+		algo.selectionSort(num);
+		long insertionSortExecutionTime = algo.executionTime;
+		System.out.println("Total Execution Time of "+ num.length + " numbers in Selection Sort take: " + selectionSortExecutionTime + " milli sec");
+		connectDB.insertDataFromArrayToMySql(num, "selection_sort", "SortingNumbers");
+		List<String> inumbers = connectDB.readDataBase("selection_sort", "SortingNumbers");
+		printValue(numbers);
+		int in = num.length;
+		randomize (num, n);
 
 
 

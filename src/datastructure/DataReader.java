@@ -24,22 +24,34 @@ public class DataReader {
 		 * Use For Each loop/while loop/Iterator to retrieve data.
 		 */
 
-		String textFile = System.getProperty("user.dir") + "/src/data/self-driving-car.txt";
+		String textFile = ("C:\\Users\\tazri\\MidtemMarch2018\\src\\data\\self-driving-car");
 
-		FileReader fr = new FileReader(textFile);        //used to read the file
-		BufferedReader br = new BufferedReader(fr);
-
-		String ln = "";
-
-		while ((ln = br.readLine()) != null) {
-			System.out.println(ln);
+				//System.getProperty("user.dir") + "/src/data/self-driving-car";
+		BufferedReader br = null;
+		try {
+			br = new BufferedReader(new FileReader(textFile));
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
 		}
 
-		br.close(); // fixed the error by using throws IOException or we can also use try catch method
+		String text ;
+		while ((text = br.readLine())!=null){
+			System.out.println(text);
+		}
+
+		Stack<String> wrdMap = new Stack<String>();
+		String[] splitWords = textFile.split(" ");
+
+		for (String word : splitWords) {
+			Integer count = wrdMap.indexOf(splitWords);
+			if (count == null) {
+				count = 0;
+			}
+			wrdMap.add(word);
+		}
+		wrdMap.push(textFile);
+		System.out.println(wrdMap);
 
 	}
 
 }
-
-
-

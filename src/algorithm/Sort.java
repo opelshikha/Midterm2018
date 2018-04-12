@@ -35,13 +35,25 @@ public class Sort {
         int [] list = array;
         //implement here
 
-
+        int in, out;
+        for(out=1; out<array.length; out++)
+        {
+            int temp = array[out];
+            in = out;
+            while(in>0 && array[in-1] >= temp)
+            {
+                array[in] = array[in-1];
+                --in;
+            }
+            array[in] = temp;
+        }
 
         final long endTime = System.currentTimeMillis();
         final long executionTime = endTime - startTime;
         this.executionTime = executionTime;
         return list;
     }
+
 
     public int[] bubbleSort(int [] array){
         int [] list = array;
@@ -52,6 +64,13 @@ public class Sort {
         return list;
     }
     
+
+
+
+
+
+
+
 
     public int [] mergeSort(int [] array){
         int [] list = array;
